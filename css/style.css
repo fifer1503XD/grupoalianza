@@ -341,10 +341,14 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 	text-align: center;
 	margin-top: 20px;	
 	color: #000;
-
-
 }
-
+.totaly_text2{
+    width: 100%;
+float: left;
+text-align: center;
+margin-top: 20px;	
+color: #fff;
+}
 .making_tetx{
 	width: 100%;
 	float: left;
@@ -361,6 +365,15 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 	text-align: center;
 	margin-top: 20px;	
 	color: #000;
+	margin-left: 0;
+
+}
+.making2{
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin-top: 20px;	
+	color: #fff;
 	margin-left: 0;
 
 }
@@ -455,6 +468,7 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 }
 
 .about_inner{
+    height: 100vh;
 	width: 100%;
 	float: left;
 	margin-top: 10px;
@@ -462,6 +476,20 @@ button.btn.btn-primary, button.btn.btn-primary:hover, button.btn.btn-primary:foc
 	background-color: #ffffff;
 	border-radius: 20px;
     border: 2px solid #55b994;
+    padding: 5%;
+}
+
+.about_inner2{
+    color: white;
+    height: 100vh;
+	width: 100%;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+	background-color: #55b994;
+	border-radius: 20px;
+    border: 2px solid #55b994;
+    padding: 5%;
 }
 .dedicated{
 	width: 100%;
@@ -680,9 +708,12 @@ button.main_bt a:hover {
 
 
 .iconImage {
-    width: 50%;
+    width: 60%;
 }
 
+.titleService{
+    font-weight: 600;
+}
 
 
 }	
