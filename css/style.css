@@ -679,7 +679,9 @@ button.main_bt a:hover {
 .footer_menu{ padding-right: 10px; }
 
 
-
+.iconImage {
+    width: 50%;
+}
 
 
 
