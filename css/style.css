@@ -488,7 +488,7 @@ color: #fff;
 	margin-bottom: 10px;	
 	background-color: #55b994;
 	border-radius: 20px;
-    border: 2px solid #55b994;
+    border: 2px solid black;
     padding: 5%;
 }
 .dedicated{
@@ -714,7 +714,9 @@ button.main_bt a:hover {
 .titleService{
     font-weight: 600;
 }
-
+ .about_inner2 :hover{ 
+     background-color: #fff;
+ }
 
 }	
 
