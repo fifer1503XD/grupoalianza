@@ -83,7 +83,7 @@
     <!-- banner end -->
     <!-- choose start -->
     <div id="about" class="choose_section">
-    	<div class="container">
+    	<div class="container serviceContainer">
     		<div class="col-sm-12">
     			<h1 class="choose_text">Por qué <span class="color">escogernos ?</span></h1>
     			<p class="lorem_text"></p>
@@ -94,7 +94,7 @@
     	<div class="container">
     	    <div class="row">
     		    <div class="col-sm-12">
-    			    <div class="power_full about_inner2">
+    			    <div class="power_full">
     				    <div class="icon"><a href="#"><img src="images/power-full-icon.png"></a></div>
     				    <h2 class="making_tetx titleService">GRUPO ALIANZA TE ASESORA PARA:</h2>
 								<h2 class="titleService">•	Salir de un reporte negativo en centrales de riesgo y así recuperar la vida crediticia <br>
@@ -208,27 +208,41 @@
     			<div class="col-md-6">
     				<div class="input_main">
                        <div class="container">
-                          <form action="/action_page.php">
+                          <form action="submit">
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Name" name="Name">
+                              <input id="Name" type="text" class="email-bt" placeholder="Nombre" name="Name">
                             </div>
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
+                              <input id="Email" type="text" class="email-bt" placeholder="Email" name="Email">
                             </div>
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone" name="Email">
+                              <input id="Telefono" type="text" class="email-bt" placeholder="Telefono" name="telefono">
                             </div>
                                 <div class="form-group">
-                                  <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                                  <input id="Mensaje" class="massage-bt" placeholder="Mensaje" rows="5" id="comment" name="text">
                                 </div>
                             </form>
                           
                        </div> 
                        <div class="send_btn">
-                        <button type="button" class="main_bt"><a href="#">Send</a></button>
+						<script>
+				
+							function sendMensaje() {  
+								var x1 = document.getElementById("Name").value;
+								var x2 = document.getElementById("Email").value;
+								var x3 = document.getElementById("Telefono").value;
+								var x4 = document.getElementById("Mensaje").value;
+								var link= 'Nombre%3A%20%20%0A '+x1 +' Email%3A%20%20%0A' +x2 + ' Telefono%3A%20%20%0A'+x3+ ' Mensaje%3A%20%20%0A' +x4
+								window.location.href ="https://api.whatsapp.com/send?phone=573102715966&text="+link+'Hola te comunicas con Grupo Alianza, es un gusto atenderte.'
+								alert(link);
+		
+							}
+						</script>
+                        <button type="button" onclick="sendMensaje()" class="main_bt">Enviar</button>
                        </div>                   
                     </div>
     			</div>
+			
     			<div class="col-md-6">
     				<div class="section_right">
     					<img src="images/img-2.png" style="max-width: 100%;">

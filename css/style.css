@@ -706,7 +706,7 @@ button.main_bt a:hover {
 
 .about_inner2{
     color: white;
-    height: 95vh;
+    height: 80vh;
 	width: 100%;
 	float: left;
 	margin-top: 10px;
@@ -715,6 +715,9 @@ button.main_bt a:hover {
 	border-radius: 20px;
     border: 2px solid black;
     padding: 5%;
+}
+.serviceContainer{
+    padding: 0;
 }
  .imgPrincipal{
      border-radius: 70px 20px;
